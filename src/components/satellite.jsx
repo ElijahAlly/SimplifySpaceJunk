@@ -1,20 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { propagate, twoline2satrec } from 'satellite.js';
-// import {
-// 	formatPostion,
-// 	displaySatInfo,
-// 	closeSatInfo,
-// 	isMounted,
-// 	toggleMount,
-// } from '@/util/satellite_helpers';
-
 // TODO: Make into real satellite objects
 
 const Satellite = ({ satellite, sunColor, focusOnSatellite }) => {
-	// const [currentSatMounted, setCurrentSatMounted] = useState(false);
-
-	// * Util
-
 	const formatPostion = (position) => {
 		if (position < 0 && position < -150) {
 			position = `${position}`;
